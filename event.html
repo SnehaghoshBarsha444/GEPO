@@ -11,14 +11,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .mobile-menu {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+            .desktop-menu {
+                display: none;
+            }
+        }
+        .slide-down {
+            transition: all 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .slide-down.active {
+            max-height: 500px;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
-     <header class="bg-blue-600 sticky top-0 z-50 shadow-lg">
+    <header class="bg-blue-600 sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4">
             <nav class="flex justify-between items-center py-4">
                 <div class="flex items-center">
                     <img src="assets/jis-logo.png" alt="GEPO Logo" class="h-20 w-20 rounded">
-                    <!-- <span class="text-white font-bold text-xl ml-2">GEPO</span> -->
                 </div>
                <!-- Mobile Menu Button with Animation -->
                 <button class="mobile-menu text-white lg:hidden focus:outline-none" 
@@ -34,7 +54,6 @@
                     <a href="res.html" class="text-white hover:underline transition duration-200 hover:text-blue-200">Resources</a>
                     <a href="event.html" class="text-white hover:underline transition duration-200 hover:text-blue-200">Events</a>
                     <a href="contact.html" class="text-white hover:underline transition duration-200 hover:text-blue-200">Contact</a>
-                
                 </div>
             </nav>
             <div id="mobileNav" class="slide-down lg:hidden w-full bg-blue-700 rounded-b-lg">
@@ -51,7 +70,7 @@
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
+     <main class="container mx-auto px-4 py-8">
         <!-- Section Header -->
         <section class="text-center mb-12">
             <h1 class="text-4xl font-bold text-gray-800 mb-4">Events & News</h1>
@@ -136,6 +155,7 @@
             <p>&copy; 2025 Global Engagement & Partnerships Office. All rights reserved.</p>
         </div>
     </footer>
+
     <script>
         function toggleMenu() {
             const mobileNav = document.getElementById('mobileNav');
@@ -171,4 +191,5 @@
     </script>
 </body>
 </html>
+
 
