@@ -58,8 +58,11 @@
                     <img src="assets/jis-logo.png" alt="GEPO Logo" class="h-20 w-20 rounded">
                     <!-- <span class="text-white font-bold text-xl ml-2">GEPO</span> -->
                 </div>
-                <button id="menuButton" class="lg:hidden text-white">
-                    <i class="fas fa-bars text-2xl"></i>
+               <!-- Mobile Menu Button with Animation -->
+                <button class="mobile-menu text-white lg:hidden focus:outline-none" 
+                        onclick="toggleMenu()"
+                        aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars text-2xl transform transition-transform duration-200"></i>
                 </button>
                 <div class="hidden lg:flex space-x-6">
                     <a href="index.html" class="text-white hover:underline transition duration-200 hover:text-blue-200">Home</a>
@@ -84,12 +87,6 @@
                 </nav>
             </div>
         </div>
-        <!-- Mobile Menu Button with Animation -->
-                <button class="mobile-menu text-white lg:hidden focus:outline-none" 
-                        onclick="toggleMenu()"
-                        aria-label="Toggle navigation menu">
-                    <i class="fas fa-bars text-2xl transform transition-transform duration-200"></i>
-                </button>
     </header>
 
     <main class="container mx-auto px-4 py-8">
