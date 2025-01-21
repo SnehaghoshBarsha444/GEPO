@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Support - GEPO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <img src="assets/jis-logo.png" alt="GEPO Logo" class="h-16 w-16 rounded">
+                <div class="hidden lg:flex space-x-6 text-white">
+                    <a href="index.html" class="hover:underline">Home</a>
+                    <a href="about.html" class="hover:underline">About Us</a>
+                    <a href="global.html" class="hover:underline">Global Partnerships</a>
+                    <a href="programs.html" class="hover:underline">Programs</a>
+                    <a href="res.html" class="hover:underline">Resources</a>
+                    <a href="event.html" class="hover:underline">Events</a>
+                    <a href="contact.html" class="underline">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Section Header -->
+        <section class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Contact & Support</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Get in touch with our Global Engagement & Partnerships Office for assistance and information.
+            </p>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt text-3xl text-blue-600 mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Office Address</h2>
+                    <p>123 University Avenue</p>
+                    <p>Global Center, Room 200</p>
+                    <p>Cityville, State 12345</p>
+                    <p>United States</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope text-3xl text-blue-600 mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Email</h2>
+                    <p><a href="mailto:info@gepo.edu" class="hover:underline">info@gepo.edu</a></p>
+                    <p><a href="mailto:partnerships@gepo.edu" class="hover:underline">partnerships@gepo.edu</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt text-3xl text-blue-600 mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Phone Numbers</h2>
+                    <p>Main Office: <a href="tel:+11234567890" class="hover:underline">+1 (123) 456-7890</a></p>
+                    <p>Support Hotline: <a href="tel:+18001234567" class="hover:underline">+1 (800) 123-4567</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Chat Support -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Live Chat Support</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="mb-4">Need immediate assistance? Chat with our support team now!</p>
+                <button id="startChatBtn" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition duration-300">
+                    Start Chat
+                </button>
+            </div>
+        </section>
+
+        <!-- Inquiry Form -->
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Inquiry Form</h2>
+            <form id="inquiryForm" class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="mb-4">
+                    <label for="category" class="block text-gray-700 font-bold mb-2">I am a:</label>
+                    <select id="category" name="category" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <option value="">Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="faculty">Faculty Member</option>
+                        <option value="partner">Prospective Partner</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                    <textarea id="message" name="message" required rows="4" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition duration-300">
+                    Submit Inquiry
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Global Engagement & Partnerships Office. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('startChatBtn').addEventListener('click', function() {
+            alert('Live chat feature is not implemented in this demo. In a real application, this would open a chat window.');
+        });
+
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submission is not implemented in this demo. In a real application, this would send the form data to a server.');
+        });
+    </script>
+</body>
+</html>
+
