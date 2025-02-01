@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEPO - Events & News</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="shortcut icon" href="./assets/favicon_io/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.css"
+      rel="stylesheet"
+    />
+    <script
+    src="https://kit.fontawesome.com/4bd740a6dc.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="../css/events.css" />
+ </head>
+ <header>
+  <div class="logo">
+    <a href="../index.html">
+      <img src="../assets/images/logo.png" alt="JIS Logo" loading="lazy" />
+    </a>
+  </div>
+  <nav id="navBar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li>
+        <a href="./partnerships.html">Global Partnerships</a>
+      </li>
+      <li>
+        <a href="./programs.html">Programs & Initiatives</a>
+      </li>
+      <li><a href="./resources.html">Resources & Support</a></li>
+      <li><a href="#" class="active">Events & News</a></li>
+      <li><a href="./contact.html">Contact Us</a></li>
+      <li>
+        <a href="./login.html">Login</a>
+      </li>
+      <li><a href="../admin/admin.html">Admin</a></li>
+    </ul>
+  </nav>
+  <img
+    class="hamburger"
+    src="../assets/images/svgs/hamburger.svg"
+    alt="hamburger"
+  />
+</header>
+
+    <main>
+
+      <section id="events-hero">
+
+        <div class="hero-content">
+          <h1>Events & News</h1>
+          <p>Stay updated with our latest events, news, and achievements</p>
+        </div>
+      </section>
+
+
+      
+      <h1 class="text-4xl font-bold text-center mt-20 text-indigo-700">
+        Calendar of International Events, Conferences, and Webinars
+      </h1>
+      
+      <section id="calendar" class="section">
+
+        <div id="addEventModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden items-center justify-center">
+          <div class="bg-white rounded-lg p-8 max-w-md w-full">
+              <h2 class="text-2xl font-bold mb-4">Add New Event</h2>
+              <form id="addEventForm">
+                  <div class="mb-4">
+                      <label for="eventTitle" class="block text-gray-700 font-bold mb-2">Event Title</label>
+                      <input type="text" id="eventTitle" name="eventTitle" class="w-full px-3 py-2 border rounded-lg" required>
+                  </div>
+                  <div class="mb-4">
+                      <label for="eventStart" class="block text-gray-700 font-bold mb-2">Start Date</label>
+                      <input type="datetime-local" id="eventStart" name="eventStart" class="w-full px-3 py-2 border rounded-lg" required>
+                  </div>
+                  <div class="mb-4">
+                      <label for="eventEnd" class="block text-gray-700 font-bold mb-2">End Date</label>
+                      <input type="datetime-local" id="eventEnd" name="eventEnd" class="w-full px-3 py-2 border rounded-lg" required>
+                  </div>
+                  <div class="mb-4">
+                      <label for="eventType" class="block text-gray-700 font-bold mb-2">Event Type</label>
+                      <select id="eventType" name="eventType" class="w-full px-3 py-2 border rounded-lg" required>
+                          <option value="conference">Conference</option>
+                          <option value="webinar">Webinar</option>
+                          <option value="other">Other</option>
+                      </select>
+                  </div>
+                  <div class="flex justify-end">
+                      <button type="button" id="cancelButton" class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg mr-2">Cancel</button>
+                      <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-lg">Add Event</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  
+      <!-- Notification -->
+      <div id="notification" class="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg hidden z-50">
+          Event added successfully!
+      </div>
+      </section>
+
+
+
+
+     
+      <section id="news" class="section">
+        <div class="container">
+          <h2 class="section-title">Latest News</h2>
+          <div class="card-container">
+            <div class="card animate-on-scroll">
+
+              <img src="../assets/images/events/research-project.avif" alt="research-project">
+
+              <h3>New Partnership Announced</h3>
+              <p>
+                JIS partners with University XYZ for groundbreaking research
+                collaboration.
+              </p>
+              <a href="#" class="cta-button">Read More</a>
+            </div>
+            <div class="card animate-on-scroll">
+
+              <img src="../assets/images/events/school-scholar.jpg" alt="school-scholar">
+
+              <h3>Study Abroad Scholarship Winners</h3>
+              <p>
+                Congratulations to our 10 scholarship recipients for the
+                upcoming semester!
+              </p>
+              <a href="#" class="cta-button">See Winners</a>
+            </div>
+            <div class="card animate-on-scroll">
+
+              <img src="../assets/images/events/International-recognition.avif" alt="international-recognition">
+
+              <h3>Faculty Research Grant Awarded</h3>
+              <p>
+                Dr. Jane Doe receives prestigious grant for international
+                climate change study.
+              </p>
+              <a href="#" class="cta-button">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="container">
+          <h2 class="section-title">Photo and Video Gallery</h2>
+          <div class="gallery-container animate-on-scroll">
+
+            <div class="image-card">
+              <img src="../assets/images/events/image1.avif" alt="gallery-image-1" />
+            </div>
+            <div class="image-card">
+              <img src="../assets/images/events/image2.jpg" alt="gallery-image-2" />
+            </div>
+            <div class="image-card">
+              <img src="../assets/images/events/image3.jpg" alt="gallery-image-3" />
+            </div>
+            <div class="image-card">
+              <img src="../assets/images/events/image1.avif" alt="gallery-image-4" />
+            </div>
+            <div class="image-card">
+              <img src="../assets/images/events/image2.jpg" alt="gallery-image-5" />
+            </div>
+
+            <div class="video-card-container">
+
+                 <!-- Video Card 1 -->
+                 <div class="video-card">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/8rlyg1tg794?si=pKH1vd-pcQC57tMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+             <!-- Video Card 2 -->
+             <div class="video-card">
+             
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/H_fjjNyMlgs?si=jLjamukjjVS63CBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+           <!-- Video Card 3 -->
+            <div class="video-card">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/TRCNgfxtl0g?si=vmMwE01KL0M22uI9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+                 <!-- Video Card 4 -->
+                 <div class="video-card">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/8rlyg1tg794?si=pKH1vd-pcQC57tMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+             <!-- Video Card 5-->
+             <div class="video-card">
+             
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/H_fjjNyMlgs?si=jLjamukjjVS63CBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="social-feed" class="section">
+        <div class="container">
+          <h2 class="section-title">Social Media Feed</h2>
+          <div class="social-feed-container">
+
+            
+            <div class="social-card animate-on-scroll">
+              <div class="social-header">
+                <img src="../assets/images/events/icons-twitter.png" alt="twitter-logo" />
+                <h3>@JISGlobal</h3>
+              </div>
+              <img id="twitter-post" src="../assets/images/events/twitter-post.png" alt="twitter-post">
+              <a href="https://x.com/jisgroupindia" target="_blank" class="cta-button">View Tweet</a>
+            </div>
+
+            <div class="social-card animate-on-scroll">
+              <div class="social-header">
+                <img src="../assets/images/events/icons-linkedin.png" alt="linkedin-logo" />
+                <h3>JIS Global Engagement</h3>
+              </div>
+              <img id="linkedin-post" src="../assets/images/events/linkedin-post.png" alt=" linkedin-post">
+              <a href="https://www.linkedin.com/company/jisgroup/posts/?feedView=all"  target="_blank" class="cta-button">View Post</a>
+            </div>
+            
+            <div class="social-card animate-on-scroll">
+              <div class="social-header">
+                <img src="../assets/images/events/icons-facebook.png" alt="facebook-logo" />
+                <h3>JIS Global Engagement</h3>
+              </div>
+              <img  id="facebook-post" src="../assets/images/events/facebook-post.png" alt="facebook-post">
+              <a href="https://www.facebook.com/JISGroupEducationalInitiatives/"  target="_blank" class="cta-button">View Post</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      
+
+
+
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+  
+              <a href="./html/programs.html">Study Abroad Programs</a>
+            </li>
+            <li>
+              <a href="./html/programs.html">International Admissions</a>
+            </li>
+            <li>
+              <a href="./html/programs.html">Faculty Exchange Programs</a>
+            </li>
+            <li>
+              <a href="./html/partnerships.html">Research Collaborations</a>
+            </li>
+            <li>
+              <a href="./html/events.html">Upcoming International Events</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Global Engagement & Partnerships Office</p>
+          <p>Email: gepo@jis.edu</p>
+          <p>Phone: +1 234 567 8900</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://x.com/jisgroupindia" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/jisgroup/?originalSubdomain=in" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/JISGroupEducationalInitiatives/" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          JIS &copy; 2025 Global Engagement & Partnerships Office. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.js'></script>
+    <script src="../js/events.js"></script>
+
+  </body>
+</html>
+
+
