@@ -1,0 +1,141 @@
+.programs-list-0 {
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 0;
+  padding-bottom: 10px;
+ }
+ .program-item {
+   background-color: rgb(117, 169, 211);
+   border: 1px solid #e0e0e0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   border-radius: 7px;
+   margin-top: 10px;
+}
+
+
+.program-info{
+   font-size: 1.2rem;
+}
+.program-item:last-child {
+   border-bottom: none;
+}
+.program-actions button {
+   margin-left: 0.5rem;
+   margin-top: 5px;
+   padding: 0.7rem 1rem;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   
+}
+.edit-btn {
+   background-color: #ffc107;
+   color: black;
+}
+.edit-btn:hover {
+   background-color: #e0a800;
+}
+.delete-btn {
+   background-color: #dc3545;
+   color: white;
+}
+.delete-btn:hover {
+   background-color: #c82333;
+}
+
+@media (max-width: 720px) {
+  .programs-list-0 {
+    padding: 1rem;
+  }
+  .program-item {
+    padding: 0.5rem;
+  }
+  .program-info{
+   font-size: 0.8rem;
+}
+}
+
+@media (max-width: 480px) {
+  .programs-list-0 {
+    padding: 0.5rem;
+  }
+  .program-item {
+    padding: 0.25rem;
+  }
+   .program-info{
+    font-size: 0.5rem;
+   }
+}
+
+
+/* lk */
+.program-form {
+   background-color: #f9f9f9;
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   max-width: 600px;
+   margin: 2rem auto;
+}
+
+.form-group {
+   margin-bottom: 1.5rem;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 0.5rem;
+   font-weight: bold;
+}
+
+.form-group input {
+   width: 100%;
+   padding: 0.75rem;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+}
+
+.cta-button {
+   background-color: #28a745;
+   color: white;
+   padding: 0.75rem 1.5rem;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 1rem;
+   transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+   background-color: #218838;
+}
+
+@media (max-width: 720px) {
+   .program-form {
+      padding: 1rem;
+   }
+   .form-group input {
+      padding: 0.5rem;
+   }
+   .cta-button {
+      padding: 0.5rem 1rem;
+   }
+}
+
+@media (max-width: 480px) {
+   .program-form {
+      padding: 0.5rem;
+   }
+   .form-group input {
+      padding: 0.25rem;
+   }
+   .cta-button {
+      padding: 0.25rem 0.5rem;
+   }
+}

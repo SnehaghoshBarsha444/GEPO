@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEPO - Login</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="shortcut icon" href="./assets/favicon_io/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4bd740a6dc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/images/logo.png" alt="JIS Logo" loading="lazy" />
+        </a>
+      </div>
+      <nav id="navBar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li>
+            <a href="./partnerships.html">Global Partnerships</a>
+          </li>
+          <li>
+            <a href="./programs.html">Programs & Initiatives</a>
+          </li>
+          <li><a href="./resources.html">Resources & Support</a></li>
+          <li><a href="./events.html">Events & News</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li>
+            <a href="#" class="active">Login</a>
+          </li>
+          <li><a href="../admin/admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      <img
+        class="hamburger"
+        src="../assets/images/svgs/hamburger.svg"
+        alt="hamburger"
+      />
+    </header>
+
+    <main>
+      <section class="login-section">
+        <div class="login-container">
+          <div class="login-header">
+            <h2>Welcome to JIS Group</h2>
+            <h3 id="login_header">Log in</h3>
+          </div>
+
+          <form id="loginForm" class="login-form">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <button type="submit" class="cta-button">Log In</button>
+            <div class="forgot-password">
+              <a href="./forgot_password.html">Forgot Password?</a>
+            </div>
+          </form>
+
+          <div class="login-footer">
+            <p>
+              Don't have an account?
+              <a
+                href="./signup.html"
+                style="color: var(--primary-color); font-weight: bold"
+                >Sign Up</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href="./html/programs.html">Study Abroad Programs</a>
+            </li>
+            <li>
+              <a href="./html/programs.html">International Admissions</a>
+            </li>
+            <li>
+              <a href="./html/programs.html">Faculty Exchange Programs</a>
+            </li>
+            <li>
+              <a href="./html/partnerships.html"
+                >Research Collaborations</a
+              >
+            </li>
+            <li>
+              <a href="./html/events.html"
+                >Upcoming International Events</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Global Engagement & Partnerships Office</p>
+          <p>Email: gepo@jis.edu</p>
+          <p>Phone: +1 234 567 8900</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://x.com/jisgroupindia" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/jisgroup/?originalSubdomain=in"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/JISGroupEducationalInitiatives/"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          JIS &copy; 2025 Global Engagement & Partnerships Office. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
