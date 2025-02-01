@@ -1,4 +1,4 @@
-### GEPO Website
+## GEPO Website
 
 ## Overview
 
@@ -21,6 +21,14 @@ The Global Engagement & Partnerships Office (GEPO) website is designed for the J
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: PHP
 - **Database**: MySQL
+
+## Live Demo 
+**YouTube :** [Video](https://youtu.be/vsxxgIjWQrk)
+
+
+## Figma Design 
+![Project-23-GEPO-JIS-frontend-index-html-2025-01-15](https://github.com/user-attachments/assets/f0b8b8dd-e64a-42e2-9bbf-10edefb126b7)
+
 
 ## Installation & Setup
 
